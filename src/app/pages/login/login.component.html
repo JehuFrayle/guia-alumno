@@ -1,0 +1,10 @@
+<div class="container flex flex-col gap-4">
+    <div class="card w-96 max-w-full bg-base-100 shadow-xl p-4 mx-auto flex flex-col gap-4">
+        <h1 class="card-title">Introduce tu matrícula</h1>
+        <input #inputMatricula required type="text" inputmode="numeric" pattern="[0-9]+" placeholder="120021" class="input input-ghost w-full max-w-xs" (keyup)="changeMatricula($event)" [value]="matricula" />
+        <p *ngIf="inputMatricula.validity.patternMismatch" class="alert alert-error text-sm">Recuerda que tu matrícula es numérica</p>
+        <div class="card-actions justify-end">
+            <button [disabled]="!inputMatricula.checkValidity()" type="button" class="btn btn-primary" (click)="login()">Entrar</button>
+        </div>
+    </div>
+</div>

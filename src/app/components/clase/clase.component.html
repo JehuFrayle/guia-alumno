@@ -1,0 +1,15 @@
+<article class="card w-full max-w-xl mx-auto bg-primary text-primary-content" [ngClass]="{'bg-secondary':isCurrent}">
+    <div class="card-body" style="--padding-card: 1.25rem">
+        <header class="flex w-full items-center gap-2 mb-2">
+            <fa-icon [icon]="bookIcon" class="fa-lg"></fa-icon>
+            <h2 class="card-title text-sm">{{clase.materia}}</h2>
+        </header>
+        <div class="flex justify-between">
+            <p>{{clase.salon}}</p>
+            <p class="text-right flex align-center justify-end gap-1">
+                <fa-icon [icon]="clockIcon"></fa-icon>
+                {{clase.hora_inicio}}
+            </p>
+        </div>
+    </div>
+</article>

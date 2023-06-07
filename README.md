@@ -1,6 +1,20 @@
 # GuiaAlumno
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.2.
+Este proyecto consiste en una aplicación web que ayude a los estudiantes de la Universidad de Tijuana a organizar sus jornada escolar. Actualmente su función es mostrar el horario de cada día de forma sencilla, pero la idea es ir agregando características de forma progresiva que ayuden de otras formas a los estudiantes como mostrando temas de las asignaturas, o permitiendo manejar un calendario con fechas especiales de la universidad.
+
+Este proyecto está siendo construido con Angular para agregar mejoras progresivamente y ya que en el futuro se espera utilizar Ionic y convertirla en App para Android y iOS.
+
+## API
+
+El backend de este proyecto consiste en una API construida con PHP y Slim. Por el momento la API es pública pero cuando se despliegue la aplicación de frontend pasará a implementar una política de CORS.
+
+## Herramientas de diseño
+
+Para agilizar el desarrollo de esta aplicación se está haciendo uso de diferentes herramientas de diseño entre las que se encuentran:
+
+- Angular CDK para manejar la lógica de diferentes componentes como modales u overlays.
+- TailwindCSS con DaisyUI para usar componentes ya diseñados.
+- FontAwesome para incorporar íconos varios.
 
 ## Development server
 

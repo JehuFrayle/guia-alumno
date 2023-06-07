@@ -1,0 +1,29 @@
+<div class="hero min-h-screen" style="background-image: url(assets/cut-hero.webp); transform: translateY(-64px); z-index: -1; position: absolute;">
+    <div class="hero-overlay bg-opacity-60"></div>
+    <div class="hero-content text-center text-neutral-content relative w-[90%] md:max-w-xl">
+        <div class="max-w-md">
+            <h1 class="mb-5 text-5xl font-bold">Hola estudiante</h1>
+            <p class="mb-5">Encuentra lo que necesitas para empezar tu jornada escolar.</p>
+            <a routerLink="/login" class="btn btn-primary">Ingresar</a>
+        </div>
+    </div>
+</div>
+<style>
+    .hero-content{
+        aspect-ratio: 1/1;
+        border-radius: 50%;
+        background-color: rgb(21, 168, 142, .25);
+    }
+    .hero-content > div::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 50%;
+        height: 50%;
+        left: -5%;
+        bottom: -5%;
+        border-radius: 50%;
+        background-color: rgb(21, 168, 142, .25);  
+        z-index: -1;
+    }
+</style>
